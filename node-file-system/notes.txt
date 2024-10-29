@@ -1,0 +1,57 @@
+//// JSON 
+
+JSON Format ---( JSON.stringify(jsonData) )---> string
+string ---( JSON.parse(str) )---> JSON Format
+
+
+npm run <Script_name> --> execute the commands written in the scripts
+
+node <file_name> ---> file is getting run with the node
+
+
+
+////What is Express JS ?
+~~~~~~~~~~~~~~~~~~~~~~~~~
+           -->It is a web framework
+           -->acts as a middleware in NodeJS
+           --> enables the NodeJS to work as a server
+                      --> Takes a request (it will have a request object)
+                      --> Processed the request
+                           -->MVC architecture
+                           -->make use of routing / routing table
+                      -->sends back a response (it will have a request object)
+
+         --> npm i express --save
+
+
+
+/// Routing : for a given path server can provides the resources for that path
+
+       server address : http://localhost:3400
+
+        login page : http://localhost:3400/login
+                ->'/login' is the path
+
+        home page : http://localhost:3400/home
+                ->'/home' is the path
+
+        products page : http://localhost:3400/products
+                    ->'/products' is the path
+
+
+   /// http verbs :
+   ~~~~~~~~~~~~~~~~
+        GET
+        POST
+        PUT
+        DELETE
+
+// Routing table using express
+    
+        syntax :
+        app.METHOD(PATH, HANDLER)
+
+              examples :
+              app.get('/login', loginhandler)        
+              app.post('/home', homehandler)        
+              app.put('/products', productshandler)
